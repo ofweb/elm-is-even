@@ -1,4 +1,4 @@
-module Main exposing (..)
+module Main exposing (main)
 
 import Html.Attributes exposing (placeholder)
 import Html.Events exposing (onInput)
@@ -62,6 +62,7 @@ view model =
         ]
 
 
+main : Program Never {message: String} Msg
 main =
     Html.beginnerProgram
         { model = { message = "" }
